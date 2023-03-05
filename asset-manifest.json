@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/attendance-headache/static/css/main.dce6f79d.css",
+    "main.js": "/attendance-headache/static/js/main.dbc4e33b.js",
+    "index.html": "/attendance-headache/index.html",
+    "main.dce6f79d.css.map": "/attendance-headache/static/css/main.dce6f79d.css.map",
+    "main.dbc4e33b.js.map": "/attendance-headache/static/js/main.dbc4e33b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dce6f79d.css",
+    "static/js/main.dbc4e33b.js"
+  ]
+}

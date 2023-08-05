@@ -2,20 +2,16 @@ import { useState } from "react";
 import "./App.css";
 
 function App() {
-  const [ans, setAns] = useState(0);
+  const [ans, setAns] = useState(null);
   const [present, setPresent] = useState(0);
-  const [total, setTotal] = useState(null);
+  const [total, setTotal] = useState(0);
 
   function calc() {
     let p = present,
       t = total,
       ans = 0;
 
-    while ((p / t) * 100 < 75) {
-      p++;
-      t++;
-      ans++;
-    }
+    while ((p++ / t++) * 100 < 75) ans++;
 
     setAns(ans);
   }
@@ -30,7 +26,8 @@ function App() {
           Days Present
           <input
             field="present"
-            onChange={(e) => setPresent(e.target.value)}
+            value={present}
+            onChange={(e) => setPresent(parseInt(e.target.value))}
             type="number"
           />
         </label>
@@ -38,7 +35,8 @@ function App() {
           Total Days
           <input
             field="total"
-            onChange={(e) => setTotal(e.target.value)}
+            value={total}
+            onChange={(e) => setTotal(parseInt(e.target.value))}
             type="number"
           />
         </label>
